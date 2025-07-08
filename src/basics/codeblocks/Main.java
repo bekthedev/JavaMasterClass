@@ -1,4 +1,4 @@
-package CodeBlock;
+package basics.codeblocks;
 
 public class Main {
     public static void main(String[] args) {
