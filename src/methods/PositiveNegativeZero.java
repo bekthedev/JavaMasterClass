@@ -2,7 +2,7 @@ package methods;
 
 public class PositiveNegativeZero {
     public static void main(String[] args) {
-
+        checkNumber(0);
     }
 
     public static void checkNumber(int number) {
