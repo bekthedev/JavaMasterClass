@@ -14,8 +14,7 @@ public class SecondsAndMinutesChallenge {
             return "Seconds cannot be negative!";
         }
 
-        int minutes = seconds / 60;
-        return getDurationString(minutes, seconds);
+        return getDurationString(seconds / 60, seconds % 60);
     }
     public static String getDurationString(int minutes, int seconds) {
 
@@ -30,8 +29,7 @@ public class SecondsAndMinutesChallenge {
         int hours = minutes / 60;
 
         int remainingMinutes = minutes % 60;
-        int remainingSeconds = seconds % 60;
 
-        return hours + "h " + minutes + "m " + remainingSeconds + "s";
+        return hours + "h " + minutes + "m " + seconds + "s";
     }
 }
